@@ -1,0 +1,32 @@
+{
+  "dataset_version": "v1",
+  "raw_file": "C:\\Users\\chand\\Desktop\\SkyGrid\\backend\\ml\\data\\raw_episodes.csv",
+  "n_total": 5000,
+  "n_train": 3500,
+  "n_val": 750,
+  "n_test": 750,
+  "feature_names": [
+    "route_dist_km",
+    "battery_start_pct",
+    "battery_soh_pct",
+    "payload_kg",
+    "drone_speed_kmh",
+    "wind_speed_kmh",
+    "weather_severity",
+    "num_active_drones",
+    "pad_queue_estimate",
+    "priority_ordinal",
+    "motor_hours",
+    "alt_segment_ratio"
+  ],
+  "label_names": [
+    "completion_time_s",
+    "energy_consumed_pct"
+  ],
+  "split_strategy": "temporal_by_seed",
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "seed": 42,
+  "data_source": "synthetic_simulation",
+  "note": "All data generated from SkyGrid simulation physics model. Not validated against physical drone hardware. ML predictions are valid only within simulator assumptions."
+}

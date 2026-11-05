@@ -1,0 +1,73 @@
+{
+  "dataset_version": "v1",
+  "data_source": "synthetic_simulation",
+  "feature_names": [
+    "route_dist_km",
+    "battery_start_pct",
+    "battery_soh_pct",
+    "payload_kg",
+    "drone_speed_kmh",
+    "wind_speed_kmh",
+    "weather_severity",
+    "num_active_drones",
+    "pad_queue_estimate",
+    "priority_ordinal",
+    "motor_hours",
+    "alt_segment_ratio"
+  ],
+  "label_names": [
+    "completion_time_s",
+    "energy_consumed_pct"
+  ],
+  "n_train": 3500,
+  "n_val": 750,
+  "n_test": 750,
+  "models": {
+    "linear_ridge": {
+      "train_time_s": 0.013,
+      "train_completion_time_s_mae": 21.9709,
+      "train_completion_time_s_rmse": 30.7498,
+      "train_completion_time_s_r2": 0.9855,
+      "train_energy_consumed_pct_mae": 2.3807,
+      "train_energy_consumed_pct_rmse": 3.5468,
+      "train_energy_consumed_pct_r2": 0.935,
+      "val_completion_time_s_mae": 21.7467,
+      "val_completion_time_s_rmse": 30.7287,
+      "val_completion_time_s_r2": 0.9853,
+      "val_energy_consumed_pct_mae": 2.4289,
+      "val_energy_consumed_pct_rmse": 3.6692,
+      "val_energy_consumed_pct_r2": 0.927,
+      "test_completion_time_s_mae": 23.5828,
+      "test_completion_time_s_rmse": 33.227,
+      "test_completion_time_s_r2": 0.9839,
+      "test_energy_consumed_pct_mae": 2.4245,
+      "test_energy_consumed_pct_rmse": 3.7257,
+      "test_energy_consumed_pct_r2": 0.9263
+    },
+    "gradient_boosting": {
+      "train_time_s": 4.203,
+      "train_completion_time_s_mae": 4.735,
+      "train_completion_time_s_rmse": 6.0607,
+      "train_completion_time_s_r2": 0.9994,
+      "train_energy_consumed_pct_mae": 0.4183,
+      "train_energy_consumed_pct_rmse": 0.5664,
+      "train_energy_consumed_pct_r2": 0.9983,
+      "val_completion_time_s_mae": 7.3042,
+      "val_completion_time_s_rmse": 9.4824,
+      "val_completion_time_s_r2": 0.9986,
+      "val_energy_consumed_pct_mae": 0.5587,
+      "val_energy_consumed_pct_rmse": 0.8104,
+      "val_energy_consumed_pct_r2": 0.9964,
+      "test_completion_time_s_mae": 7.0543,
+      "test_completion_time_s_rmse": 9.5112,
+      "test_completion_time_s_r2": 0.9987,
+      "test_energy_consumed_pct_mae": 0.5643,
+      "test_energy_consumed_pct_rmse": 0.7795,
+      "test_energy_consumed_pct_r2": 0.9968
+    }
+  },
+  "selected_model": "gradient_boosting",
+  "note": "Models trained on simulator-generated data. Predictions approximate the same physics model used by the simulator. Real-world accuracy is unvalidated.",
+  "selected_model_val_rmse_avg": 5.1464,
+  "model_path": "C:\\Users\\chand\\Desktop\\SkyGrid\\backend\\ml\\models\\best_model.joblib"
+}

@@ -1,0 +1,12 @@
+{
+  "n_scenarios": 10,
+  "n_orders": 5,
+  "base_seed": 42,
+  "strategies": [
+    "baseline",
+    "skygrid",
+    "ai_assist"
+  ],
+  "timestamp": "2026-10-30T10:03:12",
+  "note": "Simulation-only results; not validated on physical hardware."
+}

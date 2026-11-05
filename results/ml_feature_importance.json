@@ -1,0 +1,30 @@
+{
+  "completion_time_s": {
+    "route_dist_km": 0.8840514025782501,
+    "battery_start_pct": 8.899656223943609e-06,
+    "battery_soh_pct": 0.013156800013388356,
+    "payload_kg": 1.3165223251022525e-05,
+    "drone_speed_kmh": 0.09451053498966325,
+    "wind_speed_kmh": 8.570096477434907e-06,
+    "weather_severity": 0.0,
+    "num_active_drones": 3.0660642338922907e-06,
+    "pad_queue_estimate": 0.008225397521835728,
+    "priority_ordinal": 4.3961428645961805e-06,
+    "motor_hours": 1.2219979763330133e-05,
+    "alt_segment_ratio": 5.547734048346961e-06
+  },
+  "energy_consumed_pct": {
+    "route_dist_km": 0.8678751226824996,
+    "battery_start_pct": 0.05808437054230205,
+    "battery_soh_pct": 4.6459740920267105e-05,
+    "payload_kg": 0.023405081195468653,
+    "drone_speed_kmh": 1.2592832385945038e-05,
+    "wind_speed_kmh": 0.047081696696308364,
+    "weather_severity": 4.0772862702591746e-05,
+    "num_active_drones": 1.186175679082719e-05,
+    "pad_queue_estimate": 0.0034016574007097095,
+    "priority_ordinal": 1.1580391362919415e-05,
+    "motor_hours": 2.7824706433000073e-05,
+    "alt_segment_ratio": 9.791921163157943e-07
+  }
+}
